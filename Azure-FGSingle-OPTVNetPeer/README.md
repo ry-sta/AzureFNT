@@ -15,8 +15,8 @@ In Microsoft Azure, this single FortiGate-VM setup a basic setup to start explor
 This Azure ARM template will automatically deploy a full working environment containing the following components.
 
 - 1 FortiGate firewalls in an active/passive deployment
-- 1 VNETs containing a protected subnet
-- User Defined Routes (UDR) for the protected subnets
+- 1 VNETs containing a protected subnet - Delete after testing if not required.
+- User Defined Routes (UDR) for the protected subnets - Ensure route tables are added to each subnet including the vnet peers.
 
 ![FortiGate-VM azure design](images/azure-single-fortiGate.PNG )
 
