@@ -1,4 +1,4 @@
-# FortiGate Next-Generation Firewall - A Single VM
+# FortiGate Next-Generation Firewall - A Single VM (Optional VNET + Peering)
 
 [![Build Status](https://dev.azure.com/jvh-2520/Fortinet-Azure/_apis/build/status/A-FortiGate-Single-VM?branchName=main)](https://dev.azure.com/jvh-2520/Fortinet-Azure/_build/latest?definitionId=32&branchName=main)
 
@@ -74,7 +74,7 @@ The ARM template deploys different resources and it is required to have the acce
 
 ## FortiGate configuration
 
-The FortiGate VMs need a specific configuration to match the deployed environment. This configuration can be injected during provisioning or afterwards via the different options including GUI, CLI, FortiManager or REST API.
+The FortiGate VMs need a specific configuration to match the deployed environment. This configuration can be injected during provisioning or afterwards via the different options including GUI, CLI, FortiManager or REST API. The following configuration below is used for the test environment.
 
 - [Default configuration using this template](doc/config-provisioning.md)
 
