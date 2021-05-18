@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "adminPassword": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "fortiGateNamePrefix": {
+            "value": "## TO BE DEFINED ##"
+        },
+        "fortiGateImageSKU": {
+            "value": "fortinet_fg-vm"
+        },
+        "fortiGateImageVersion": {
+            "value": "latest"
+        },
+        "fortiGateAditionalCustomData": {
+            "value": ""
+        },
+        "instanceType": {
+            "value": "Standard_F2s"
+        },
+        "acceleratedNetworking": {
+            "value": "false"
+        },
+        "publicIPNewOrExisting": {
+            "value": "new"
+        },
+        "publicIPName": {
+            "value": ""
+        },
+        "publicIPResourceGroup": {
+            "value": ""
+        },
+        "publicIPAddressType": {
+            "value": "Static"
+        },
+        "vnetNewOrExisting": {
+            "value": "new"
+        },
+        "vnetName": {
+            "value": ""
+        },
+        "vnetResourceGroup": {
+            "value": ""
+        },
+        "vnetAddressPrefix": {
+            "value": "10.40.0.0/16"
+        },
+        "subnet1Name": {
+            "value": "ExternalSubnet"
+        },
+        "subnet1Prefix": {
+            "value": "10.40.1.0/24"
+        },
+        "subnet2Name": {
+            "value": "TransitSubnet"
+        },
+        "subnet2Prefix": {
+            "value": "10.40.2.0/24"
+        },
+        "subnet3Name": {
+            "value": "ProtectedASubnet"
+        },
+        "subnet3Prefix": {
+            "value": "10.40.3.0/24"
+        },
+        "fortiManager": {
+            "value": "no"
+        },
+        "fortiManagerIP": {
+            "value": ""
+        },
+        "fortiManagerSerial": {
+            "value": ""
+        },
+        "fortiGateLicenseBYOL": {
+            "value": ""
+        },
+        "location": {
+            "value": "[resourceGroup().location]"
+        },
+        "fortinetTags": {
+            "value": {
+                "publisher": "Fortinet",
+                "provider": "6EB3B02F-50E5-4A3E-8CB8-2E12925831VM"
+            }
+        }
+    }
+}
