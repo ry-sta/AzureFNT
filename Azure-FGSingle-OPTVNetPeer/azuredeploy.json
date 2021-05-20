@@ -43,6 +43,7 @@
         "6.4.2",
         "6.4.3",
         "6.4.5",
+        "7.0.0",
         "latest"
       ],
       "metadata": {
@@ -157,14 +158,14 @@
     },
     "subnet1StartAddress": {
       "type": "string",
-      "defaultValue": "10.40.1.5/24",
+      "defaultValue": "10.40.1.5",
       "metadata": {
         "description": "Subnet 1 start address, 1 consecutive private IPs are required"
       }
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "PrivateSubnet",
+      "defaultValue": "TransitSubnet",
       "metadata": {
         "description": "Internal Subnet"
       }
@@ -178,7 +179,7 @@
     },
     "subnet2StartAddress": {
       "type": "string",
-      "defaultValue": "10.40.2.5/24",
+      "defaultValue": "10.40.2.5",
       "metadata": {
         "description": "Subnet 2 start address, 2 consecutive private IPs are required"
       }
